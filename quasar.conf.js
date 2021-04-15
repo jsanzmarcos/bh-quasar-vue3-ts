@@ -29,6 +29,7 @@ module.exports = configure((/* ctx */) => ({
   // https://v1.quasar.dev/quasar-cli/boot-files
   boot: [
     'i18n',
+    'components',
     // 'axios',
   ],
 

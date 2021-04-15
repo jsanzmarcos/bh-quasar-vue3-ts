@@ -6,6 +6,12 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') },
     ],
   },
+  {
+    path: '/auth',
+    component: () => import('layouts/AuthBase.vue'),
+    children: [
+    ],
+  },
 ];
 
 export default routes;
