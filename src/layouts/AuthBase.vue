@@ -12,7 +12,7 @@
               <q-card-section class="bg-list column justify-center items-center text-center">
                 <img src="~assets/eDressage.svg" class="main-logo q-mt-md">
                 <StyledHeading no-hover >
-                  {{ 'hola' }}
+                 {{ 'Language' }}
                 </StyledHeading>
                 <black-horse-one-badge style="height: 20px; width: 80px"
                                        class="absolute-bottom-right q-mr-md offset-bho shadow-1"
@@ -22,7 +22,7 @@
                 <router-view @loading="isLoading = $event" />
               </q-card-section>
               <q-inner-loading :showing="isLoading">
-                <q-spinner-cube size="50px" color="secondary" />
+                <q-spinner-cube size="50px" color="primary" />
               </q-inner-loading>
             </q-card>
           </div>
