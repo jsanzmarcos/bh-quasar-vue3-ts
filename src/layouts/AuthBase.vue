@@ -12,7 +12,7 @@
               <q-card-section class="bg-list column justify-center items-center text-center">
                 <img src="~assets/eDressage.svg" class="main-logo q-mt-md">
                 <StyledHeading no-hover >
-                 {{ 'Language' }}
+                 {{ t('Language') }}
                 </StyledHeading>
                 <black-horse-one-badge style="height: 20px; width: 80px"
                                        class="absolute-bottom-right q-mr-md offset-bho shadow-1"
