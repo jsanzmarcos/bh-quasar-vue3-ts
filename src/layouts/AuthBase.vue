@@ -12,7 +12,7 @@
               <q-card-section class="bg-list column justify-center items-center text-center">
                 <img src="~assets/eDressage.svg" class="main-logo q-mt-md">
                 <StyledHeading no-hover >
-                 {{ t('Language') }}
+                 {{ 'hola' }}
                 </StyledHeading>
                 <black-horse-one-badge style="height: 20px; width: 80px"
                                        class="absolute-bottom-right q-mr-md offset-bho shadow-1"
@@ -39,7 +39,7 @@ import { ThemeProvider } from 'vue3-styled-components';
 // import { ThemeProvider } from 'styled-components';
 // import BlackHorseOneBadge from 'Components/ui/BlackHorseOneBadge.vue';
 // import VersionCheckerMixin from 'layouts/VersionCheckerMixin.vue';
-
+import { useI18n } from 'vue-i18n';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -50,7 +50,8 @@ export default defineComponent({
     ThemeProvider,
   },
   setup() {
-    return { };
+    const t = useI18n();
+    return { t };
   },
   data() {
     return {
